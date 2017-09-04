@@ -44,7 +44,18 @@ class Funcionario{
 
 
 }
+class Empresa{
+    String nome;
+    int cnpj;
+    Funcionario[] funcionarios;
+    int livre = 0;
 
+    void adicionarFuncionario (Funcionario f){
+        this.empregados[this.livre] = f;
+        this.livre++;
+    }
+
+}
 class ProgramaFuncionario {
     public static void main(String[] args) {
         Funcionario thiago = new Funcionario();
